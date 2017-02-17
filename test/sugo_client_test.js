@@ -40,16 +40,6 @@ describe('sugo-client', function () {
   it('Sugo client', () => co(function * () {
     let client = new SugoClient()
     assert.ok(client)
-    let socket = yield client.newSocket(`http://localhost:${port}`)
-    socket.on('error', (err) => {
-      console.error(err)
-    })
-    socket.on('foores', (data) => {
-      console.log('!!!!!!!!!')
-    })
-    socket.emit('foo', { msg: 'This is foo' })
-    asleep(1500)
-    yield client.destroySocket(socket)
   }))
 })
 
