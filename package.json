@@ -1,6 +1,6 @@
 {
   "name": "sugo-client",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Abstract class for SUGOS clients like actors and callers",
   "browser": "shim/browser",
   "main": "lib",
