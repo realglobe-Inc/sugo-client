@@ -1,6 +1,6 @@
-# sugo-client@1.0.0
+# sugo-client@1.1.0
 
-Abstract class for SUGOS clients
+Abstract class for SUGOS clients like actors and callers
 
 + Functions
   + [()](#sugo-client-function-undefined)

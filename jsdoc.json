@@ -35,7 +35,20 @@
         "description": "Abstract client of sugos",
         "parameters": [],
         "examples": []
-      }
+      },
+      "properties": [
+        {
+          "name": "clientType",
+          "access": "",
+          "virtual": true,
+          "description": "Type of client",
+          "type": {
+            "names": [
+              "string"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
