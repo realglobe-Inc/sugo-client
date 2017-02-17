@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '6'
+addons:
+  firefox: "43.0"
+before_install:
+- npm i npm-cli-login -g
+- echo "NPM_USER=${NPM_USER}"
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+install:
+- npm install jsdoc -g
+- npm install
+script:
+- ./ci/build.js
+- ./ci/doc.js
+- ./ci/shim.js
+- ./ci/test.js
+after_success:
+- ./ci/travis/publish.js
+- ./ci/travis/push_sugos.js
+
+env:
+  secure: "ZtSFMTCi+dIAZHcSzkvenKRWaRiVFyzjFbHtWdgN02SqBxDMO2vmNmpqKeSosIaQIFS+2Lu/6U3YiFgmhVA4He4wM5+uVcsWkdMxcisn3FQHDAxZmODw6KGXAyHzbZVwpbvAxil/v1bDJSjV6hhPh2Ut6Gp2fBude//c8tyUU7EVxQXRvuhN5CL7q3QXmZsAmpkSJIX7ur7av/UyaNULivPUyy1DKkq4AtiNuHnLmDvtNYSlR4pHvRHkLbOlrRj3GD4qNczhm/rpPN2/4mNrrSyNNEeBGRbkQPLLXsDPKDOnm3M8j1MUnLzQ1d0100zx7+61E6Whg7KAeWc6qss6JCeS5FPwIWl7JAAiL4H+3DDPGk8KchtptMk1ktWA7m7Lyf84+VqrIErNc3szmyC39PGdUWI8sIW7iWPMBABQ0JslIpqn2JSm4i3Ug57XF6WS6G6NEhEfsfwo0B6FaCgG9Uv/ji3/ESz5oUDpUG9j9j0W14htuXPu9ab2qecJOU4inNXGg1xmRMvafanl7Fc3a4Vy5rMWgy7oyUiWPWR4PtuvQLBHSdrA6P6k5FtbF7Fp80vJrofwhgvovHF33WrDNm/UOdMea0w/yrGK6rwUm3OLb0HTPE0gTMEF+GFvBURIGbKBm9E2y9Jv9SmUJkSwTH1oXN6DMgY9x+RmUZtVyPc="

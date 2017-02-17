@@ -1,0 +1,41 @@
+{
+  "functions": [
+    {
+      "name": "sugoClient",
+      "access": "",
+      "virtual": false,
+      "description": "Create an client instance. Just an alias of `new SugoClient(config)`",
+      "parameters": [
+        {
+          "name": "config",
+          "type": "Object",
+          "description": "Sugo caller configuration",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "SugoClient",
+        "description": ""
+      }
+    }
+  ],
+  "classes": [
+    {
+      "name": "SugoClient",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": true,
+      "fires": "",
+      "constructor": {
+        "name": "SugoClient",
+        "description": "Abstract client of sugos",
+        "parameters": [],
+        "examples": []
+      }
+    }
+  ]
+}
