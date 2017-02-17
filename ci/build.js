@@ -16,6 +16,7 @@ runTasks('build', [
     '.*.bud',
     'lib/.*.bud',
     'lib/**/.*.bud',
+    'doc/**/.*.bud',
     'test/.*.bud'
   ])
 ], true)

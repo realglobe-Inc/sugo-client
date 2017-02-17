@@ -1,3 +1,13 @@
 'use strict'
 
-const sugoClient = require('sugo-client')
+const { SugoClient } = require('sugo-client')
+
+class MyClient extends SugoClient {
+
+}
+
+{
+  let client = new MyClient()
+  /* ... */
+}
+
