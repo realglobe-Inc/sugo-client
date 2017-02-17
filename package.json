@@ -1,6 +1,6 @@
 {
   "name": "sugo-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Abstract class for SUGOS clients",
   "browser": "shim/browser",
   "main": "lib",
