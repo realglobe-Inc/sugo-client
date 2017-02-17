@@ -5,7 +5,7 @@
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepare": "node ./ci/build.js && ./ci/shim.js"
+    "prepare": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/sugo-client",
   "keywords": [
