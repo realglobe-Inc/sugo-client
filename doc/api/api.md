@@ -1,10 +1,10 @@
-# sugo-client@1.1.0
+# sugo-client@2.0.0
 
 Abstract class for SUGOS clients like actors and callers
 
 + Functions
   + [()](#sugo-client-function-undefined)
-+ [](sugo-client-classes) Class
++ [``](#sugo-client-class) Class
 
 ## Functions
 
@@ -15,9 +15,11 @@ Abstract class for SUGOS clients like actors and callers
 
 
 
-<a class='md-heading-link' name="sugo-client-classes"></a>
+<a class='md-heading-link' name="sugo-client-class"></a>
 
-##  Class
+## `` Class
+
+
 
 
 
